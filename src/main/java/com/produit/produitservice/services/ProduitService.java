@@ -11,4 +11,8 @@ import org.springframework.stereotype.Service;
 public class ProduitService {
     private  final ProduitRepository produitRepository;
 
+    public ProduitService(ProduitRepository produitRepository){
+        this.produitRepository= produitRepository;
+    }
+
 }
